@@ -1,16 +1,11 @@
-[[source]]
-
-url = "https://pypi.python.org/simple"
-verify_ssl = true
-
-
-[packages]
-
-django = "*"
-gunicorn = "*"
-django-heroku = "*"
-
-
-[requires]
-
-python_version = "3.6"
+Django==1.9.8
+dj-database-url==0.3.0
+dj-static==0.0.6
+gunicorn==19.6.0
+Unipath==1.0
+python-decouple==3
+Pillow==3.3.0
+Markdown==2.6.6
+bleach==1.4.3
+psycopg2==2.6.1
+whitenoise==3.2
