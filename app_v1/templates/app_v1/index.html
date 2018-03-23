@@ -1,0 +1,118 @@
+{% extends "app_v1/header.html" %}
+
+{% load static %}
+{% block stylesheets %}
+  <link href="{% static 'css/sidebar.css'%}" rel="stylesheet">
+  <link href="{% static 'css/document.css'%}" rel="stylesheet">
+{% endblock %}
+
+{% block main %}
+  <div class="jumbotron">
+    <div class="container">
+      <h2 class="display-3">Prototype 1</h2>
+      <p> insert basic description here </p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <!-- document contents -->
+      <div class="col-md-9">
+        <div class="doc-group" id="release-details"> 
+          <div class="doc-heading"> Release Details </div>
+          <div class="doc-subgroup" id="release-details-1">
+            <div class="doc-subheading"> Date </div>
+            <p> 23/3/18 </p>
+          </div>
+          <div class="doc-subgroup" id="release-details-2">
+            <div class="doc-subheading"> Version </div>
+            <p> v1 </p>
+          </div>
+        </div>
+        <div class="doc-group" id="functionality"> 
+          <div class="doc-heading"> Functionality/Implementations </div>
+          <div class="doc-subgroup" id="functionality-1">
+            <div class="doc-subheading"> Graph </div>
+            <p> insert usage + example here </p>
+          </div>
+          <div class="doc-subgroup" id="functionality-2">
+            <div class="doc-subheading"> Table </div>
+            <p> insert usage + example here </p>
+          </div>
+          <div class="doc-subgroup" id="functionality-3">
+            <div class="doc-subheading"> JSON file </div>
+            <p> /api?id=&lt;COMPANY_CODE&gt;&date=&lt;YYYY-MM-DD&gt;&type=&lt;CM|AV|BOTH&gt;&upper_window=&lt;NON-NEGATIVE INTEGER&gt;&lower_window=&lt;NON-NEGATIVE INTEGER&gt;</p>
+          </div>
+          <div class="doc-subgroup" id="functionality-4">
+            <div class="doc-subheading"> Log file </div>
+            <p> insert usage + example here </p>
+          </div>
+        </div>
+        <div class="doc-group" id="differences"> 
+          <div class="doc-heading"> Differences with previous versions </div>
+          <div class="doc-subgroup" id="differences-1">
+            <div class="doc-subheading"> N/A </div>
+            <p></p>
+          </div>
+        </div>
+        <div class="doc-group" id="standalone"> 
+          <div class="doc-heading"> Standalone usage </div>
+          <div class="doc-subgroup" id="standalone-1">
+            <div class="doc-subheading"> Step 1 </div>
+            <p> insert step 1 here, and so on </p>
+          </div>
+        </div>
+        <div class="doc-group" id="integration"> 
+          <div class="doc-heading"> Integrating with other systems </div>
+          <div class="doc-subgroup" id="integration-1">
+            <div class="doc-subheading"> System A </div>
+            <p> insert steps for integrating with System A, and so on </p>
+          </div>
+        </div>
+        <div class="doc-group" id="tests"> 
+          <div class="doc-heading"> Test software and data </div>
+          <div class="doc-subgroup" id="tests-1">
+            <div class="doc-subheading"> Test software </div>
+            <p> insert test software here </p>
+          </div>
+          <div class="doc-subgroup" id="tests-2">
+            <div class="doc-subheading"> Test data </div>
+            <p> insert test data here </p>
+          </div>
+        </div>        
+      </div>
+      <!-- document sidebar -->
+      <!-- TODO: generate sidebar code dynamically (see static/js/doc_sidebar.js) -->
+      <div class="col-md-3">
+        <nav class="doc-sidebar navbar navbar-light fixed">
+          <ul class="nav nav-pills flex-column">
+            <li>
+              <a class="nav-link" href="#release-details"> Release Details </a>
+              <ul class="nav nav-pills flex-column">
+                <li><a class="nav-link m1-3 my-1" href="#release-details-1"> Date </a></li>
+                <li><a class="nav-link m1-3 my-1" href="#release-details-2"> Version </a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link" href="#functionality"> Functionality/Implementations </a>
+              <ul class="nav nav-pills flex-column">
+                <li><a class="nav-link m1-3 my-1" href="#functionality-1"> Graph </a></li>
+                <li><a class="nav-link m1-3 my-1" href="#functionality-2"> Table </a></li>
+                <li><a class="nav-link m1-3 my-1" href="#functionality-3"> JSON file </a></li>
+                <li><a class="nav-link m1-3 my-1" href="#functionality-4"> Log file </a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+{% endblock %}
+
+{% block scripts %}
+  <!-- app_v1/home.html api doc sidebar functionality -->
+  <script src="{% static 'js/doc_sidebar.js' %}"></script>
+{% endblock %}

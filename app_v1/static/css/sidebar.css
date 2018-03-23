@@ -1,0 +1,52 @@
+/* source of idea for doc-sidebar styling: www.codingeverything.com/2014/02/BootstrapDocsSideBar.html */
+body {
+	position: relative;
+}
+
+.fixed {
+	position: fixed;
+}
+
+.doc-sidebar {
+	padding-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #e9ecef;
+}
+
+.doc-sidebar .nav > li > .nav-link {
+	border-radius: 0px;
+}
+
+.doc-sidebar .nav > a,
+.doc-sidebar .nav > li > a {
+	color: #999;
+	padding: 4px 20px;
+	font-size: 13px;
+	font-weight: 400;
+	border-left: 2px solid transparent;
+}
+
+.doc-sidebar .nav > li > .active,
+.doc-sidebar .nav > li > a:hover,
+.doc-sidebar .nav > li > a:focus {
+	color: #007bff;
+	background-color: #e9ecef;
+	border-left: 2px solid #007bff;
+}
+
+.doc-sidebar .nav .nav .nav-link {
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 30px;
+	font-size: 12px;
+}
+
+/* hide inactive sidebar links */
+.doc-sidebar .nav .nav {
+	display: none;
+}
+/* if a link becomes active, show the sub-links */
+.doc-sidebar .nav > li > .active + ul {
+	display: block;
+}

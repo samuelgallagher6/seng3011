@@ -1,0 +1,28 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 3.5rem;
+}
+
+
+/* Remove white margin */
+.jumbotron {
+  margin-bottom: 0;
+}
+
+/* For team introduction banner */
+#introBanner {
+    text-align: center;
+    padding: 5em;
+    color: black;
+    /*background-image: url();  <-- put in some patter to have contrasting parallex effect 
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: fixed;
+    background-repeat: repeat-y;*/
+    background-size: cover;
+    font-family: 'roboto slab', sans-serif;
+    border: 0;
+    box-shadow: inset 0 0px 4em rgba(0,0,0,0.55);
+    margin-bottom: 3.5rem;
+}
+

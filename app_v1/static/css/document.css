@@ -1,0 +1,19 @@
+/* css for API documentation pages */
+.doc-group {
+	/* TODO */
+}
+
+.doc-heading {
+	font-size: 25px;
+	font-weight: bold;	
+}
+
+.doc-subgroup {
+	/* TODO */
+	height: 200px;
+}
+
+.doc-subheading {
+	font-size: 15px;
+	font-weight: bold;
+}
